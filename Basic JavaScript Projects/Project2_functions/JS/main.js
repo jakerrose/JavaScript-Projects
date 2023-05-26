@@ -18,3 +18,13 @@ function myFunction() { //Defining a function by naming it
     sentence += " a lot from this book!"; //Concatenates two strings with += operator
     document.getElementById("Concatenate").innerHTML = sentence; //getElementByID returns element with specific value. innerHTML sets HTML content.
 }
+function mult(a, b) {
+    // Function returns the product of a and b
+    return a * b;
+    let x = myFunction(4, 3);
+    document.getElementById("demo").innerHTML = x;
+}
+function myFunction(p1, p2) {
+    let result = p1 * p2;
+    document.getElementById("demo").innerHTML = result;
+}
