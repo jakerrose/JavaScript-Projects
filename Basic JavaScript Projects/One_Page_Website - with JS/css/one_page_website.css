@@ -1,0 +1,245 @@
+h2 {
+    text-align: center;
+    font-family: Helvetica;
+    color: rgb(236, 223, 223);
+    font-size: 30px;
+    background-color: black;
+}
+
+p {
+    text-align: center;
+    font-family: Helvetica;
+    color: rgb(236, 223, 223);
+    font-size: 20px;
+    background-color: black;  
+}
+
+a {
+    color: white;
+    font-size: 50px;
+    font-family: "Helvetica";
+}
+
+body {
+    background-image: url("https://f4.bcbits.com/img/0021791782_130.jpg");
+    /* adds fade in effect*/
+        opacity: 1;
+        transition: 3s opacity;
+        }
+    
+        body.fade-out {
+            opacity: 0;
+            transition: none;
+        }
+
+
+input[type=text] {
+    width: 50%;
+    height: 50%;
+    padding: 12px 20px;
+    border: 2 px;
+    border-color: silver;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+input[name=message] {
+    height: 100px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row> .column {
+    padding: 0 8px;
+  
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column {
+    float: left;
+    width: 25%;
+}
+/* The modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+/*the modal content*/
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+/*the close button*/
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+.mySlides {
+    display: none;
+}
+.cursor {
+    cursor: pointer;
+}
+/*next and previous buttons*/
+.prev, 
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: .6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+/*Position the next button to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev {
+    left: 0;
+}
+/*on hover, add a black background color with some transparency*/
+.prev:hover, 
+.next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+/*number text (1/5), etc*/
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+img {
+    margin-bottom: -4px;
+    float: left;
+    width: 100%;
+    
+}
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 20px 16px;
+    color: white;
+}
+
+img.demo {
+    opacity: .6;
+}
+.active,
+.demo:hover {
+    opacity: 1;
+}
+img.hover-shadow {
+    transition: .3s;
+    animation: zoominoutsinglefeatured 15s forwards;
+}
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.open-button {
+    background-color:aqua;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: .8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+/*popup form, hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+.form-container input[type=text] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+.form-container input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+.form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: .8;
+}
+nav {
+    position: relative;
+    animation: mymove 5s;
+}  
+
+@keyframes mymove {
+    from {top:200px;}
+    to {top: 0px;}
+}
+
+@keyframes zoominoutsinglefeatured {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2, 1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
