@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <head>
+        <title>Jake Rose Portfolio</title>
+        <link rel="stylesheet" href="./css/Portfolio.css">
+    </head>
+    
+    <body class="background">
+
+        <div class="Navbar">
+            <a href="#home">Home</a>
+            <a href="#Slideshow">Slideshow</a>
+            <a href="#about">About</a>
+            <a href="#github">GitHub</a>
+            <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+        </div>
+
+        <br>
+        <br>
+
+        <!----Background video-->
+        <div id="home">
+            <video loop muted autoplay id="code">
+                <source src="./images/hello_world.mp4" type="video/mp4">
+                <!---if browser fails to run video:-->
+                Your browswer does not support HTML5 video
+            </video>
+        </div>
+
+        <!-------Video Text-->
+        <div class="Video_Text">
+            <h1 class="white-text">Jake Rose's Portfolio</h1>
+                <strong>
+                    <p class="center">
+                        <q>Programmer: A machine that turns coffee into code</q>
+                        <br>-Anonymous
+                        <br>
+                        <br>My name is Jake Rose, welcome to my portfolio webpage. Here I will tell you about myself and my experience.
+                    </p>
+                </strong>
+        </div>
+
+        <!--Slideshow-->
+            <!--Slideshow-->
+
+             <div id="Slideshow">
+                <div id="Slideshow_Background">
+                    <div id="Slideshow_Container">
+                        
+                        <!--Slide 1-->
+                        <div class="mySlides fade">
+                            <img class="Slideshow_Images" src="./images/HeadShot.jpg" alt="Jake Rose">
+                            <div class="text">Hello! I'm available to assist on your project!</div>
+                        </div>
+                        <!--previous and next buttons-->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <!--Slide 2-->
+                        <div class="mySlides fade">
+                            <img class="Slideshow_Images" src="./images/HTML_CSS_and_JavaScript.jpeg" alt="HTML CSS and JS">
+                            <div class="text">I am a full-stack software developer<br>
+                            trained in: <br> HTML, CSS, and JavaScript</div>
+                        </div>
+                        <!--previous and next buttons-->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <!--Slide 3-->
+                        <div class="mySlides fade">
+                            <img class="Slideshow_Images" src="./images/Python.png" alt="Python">
+                            <div class="text">I'm also trained in the popular programming language Python.</div>
+                        </div>
+                        <!--previous and next buttons-->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <!--Slide 4-->
+                        <div class="mySlides fade">
+                            <img class="Slideshow_Images" src="./images//C_Sharp_and_Dot_NET.png" alt="C# and .Net">
+                            <div class="text">My specialty is C# and .NET Framework.</div>
+                        </div>
+                        <!--previous and next buttons-->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <!--Slide 5-->
+                        <div class="mySlides fade">
+                            <img class="Slideshow_Images" src="./images/SQL_and_Database.jpg" alt="SQL">
+                            <div class="text">I'm also familiar with back end development, databases, and SQL.</div>
+                        </div>
+                        <!--previous and next buttons-->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <!--Slide 6-->
+                            <div class="mySlides fade">
+                                <img class="Slideshow_Images" src="./images/keyboard.jpg" alt="keyboard">
+                                <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div>
+                            <br>
+                            
+                            </div>
+                            <!--previous and next buttons-->
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                   
+                    <!--slideshow dots-->
+                    <div style="text-align: center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+            
+        <!------About section-->
+        <div class="Row" id="about">
+            <!---Left column-->
+            <div class="Column_2">
+                <img src="./images/code.jpg" alt="code">
+            </div>
+            <!----Right Column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am a full-stack software developer and web designer trained in C#, .Net, Html, CSS, JS and many other languages. 
+                    <br>
+                    I am a graduate of <a href="https://learncodinganywhere.com">The Tech Academy's</a> C# and .Net Bootcamp.
+                    <br>
+                    <br>I am based in Portland, Oregon but am more than comfortable working remotely. 
+                    <br>
+                    <br>Please <a onclick="openForm()" class="contact">contact</a> me about your project!
+                </p>
+            </div>
+        </div>
+        <br>
+        <br>
+     
+        <!----Github Section-->
+        <div class="Row" id="github">
+            <!---Left Column-->
+            <div class="Column_2">
+                <img src="./images/github-logo.jpg" alt="">
+            </div>
+            <!---Right Column-->
+            <div class="Column_1">
+                <h1>Github</h1>
+                <p class="centertext">
+                    View all my coding projects on my Github profile:
+                    <br>
+                </p> 
+                    <br>
+                    <p class="center"><a href="https://github.com/omniboss?tab=repositories">Github Profile</a></p>
+                </p>
+                <br>
+                <br>
+                <p class="centertext">
+                    Follow me on LinkedIn:
+                    <br>
+                    </p>
+                    <p class="center"><a href="https://www.linkedin.com/in/jake-rose-4346b140/">LinkedIn Profile</a></p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <!-----Contact section-->
+        <div id="contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>>
+            <div class="form-popup" id="myForm">
+                <h1>Contact</h1>
+                <form action="https://formspree.io/f/mnqyreql" method="post" class="form-container">
+                    <label for="name"><b>Name</b></label>
+                        <input type="text" name="Name" placeholder="Please Enter Your Name Here" required>
+                    <label for="email"><b>Email</b></label>
+                        <input type="text" name="Email" placeholder="Please Enter Your Email Here" required>
+                    <label for="message"><b>Message</b></label>
+                        <input type="text" name="Message" id="message" placeholder="Please Type Your Message Here" required>
+                        
+                        <button type="submit" class="btn">SUBMIT</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                </form>            
+            </div>
+        </div>
+
+        <!---Footer section-->
+        <footer>
+            <p>
+                <p class="center">&copy Jake Rose 2023</p>
+            </p>
+        </footer>
+        <script src="./js/main.js" defer></script>
+    </body>
+</html>
